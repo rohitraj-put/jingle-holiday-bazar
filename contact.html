@@ -7,6 +7,7 @@
     <title>Jingle Holiday Bazar</title>
     <link rel="shortcut icon" href="assets/mainlogo.gif" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -16,7 +17,7 @@
         <div class="chat_box">
             <a href="https://web.whatsapp.com/send?l=en&phone=+91 8586065128&text=I want to order a website"
                 target="_blank"><i class=" ri-chat-1-fill"></i></a>
-            <h4>Chat</h4>
+            <span class="tooltip">Chat</span>
         </div>
         <nav>
             <div class="nav__logo">
@@ -37,19 +38,24 @@
                     <div class="dropdown_nav">
                         <a href="/thailand.html">Thailand</a>
                         <a href="/belgium.html">belgium</a>
-                        <a href="">Canada</a>
-                        <a href="">dubai</a>
-                        <a href="">Singapure</a>
-                        <a href="">germany</a>
-                        <a href="">Maldives</a>
-                        <a href="">ice-land</a>
-                        <a href="">malaysia</a>
-                        <a href="">Switzerland</a>
-                        <a href="">nepal</a>
-                        <a href="">view more..</a>
+                        <a href="/canada.html">Canada</a>
+                        <a href="/dubai.html">dubai</a>
+                        <a href="/singapure.html">Singapure</a>
+                        <a href="/germany.html">germany</a>
+                        <a href="/maldives.html">Maldives</a>
+                        <a href="/ice_land.html">ice-land</a>
+                        <a href="/malaysia.html">malaysia</a>
+                        <a href="/switzerland.html">Switzerland</a>
+                        <a href="/napel.html">nepal</a>
+                        <a href="/view_more.html">view more..</a>
                     </div>
                 </li>
-                <li class="link"><a href="#">Packages</a></li>
+                <li class="link nav_hover"><a href="#">Packages<i class="ri-arrow-drop-down-fill"></i></a>
+                    <div class="dropdown_nav">
+                        <a href="/domestic_packages.html">Domestic </a>
+                        <a href="/view_more.html">International </a>
+                    </div>
+                </li>
                 <li class="link"><a href="#">Place</a></li>
                 <li class="link"><a href="/contact.html">Contact Us</a></li>
             </ul>
@@ -59,7 +65,7 @@
 
     <div class="contact_us">
         <center>
-            <h2 class="section__title" style="text-transform:uppercase; font-size: 3rem;">
+            <h2 class="section__title" style="text-transform:uppercase; font-size: 3rem;" data-aos="fade-down">
                 Contact Us</h2>
             <p class="section__subtitle">
                 At Jingle Holiday Bazar, we are committed to ensuring that you save on every trip and every holiday
@@ -70,27 +76,27 @@
 
             <div class="contact_details">
                 <div class="contact_box contactBox">
-                    <div class="contact-4">
+                    <div class="contact-4" data-aos="zoom-in">
                         <div class="inner_box">
                             <i class="ri-map-pin-line"></i>
                             <h4>3C, A1 Sector 10, Noida
                                 Uttar Pradesh, India</h4>
                         </div>
                     </div>
-                    <div class="contact-4">
+                    <div class="contact-4" data-aos="zoom-in">
                         <div class="inner_box">
                             <i class="ri-mail-line"></i>
                             <h4>jingleholidaybazar
                                 @gmail.com</h4>
                         </div>
                     </div>
-                    <div class="contact-4">
+                    <div class="contact-4" data-aos="zoom-in">
                         <div class="inner_box">
                             <i class="ri-phone-line"></i>
                             <h4>+918506944777 , +918506922777</h4>
                         </div>
                     </div>
-                    <div class="contact-4">
+                    <div class="contact-4" data-aos="zoom-in">
                         <div class="inner_box">
                             <i class="ri-customer-service-2-line"></i>
                             <h4>24/7 Dedicated Customer Support</h4>
@@ -98,7 +104,7 @@
                     </div>
 
                 </div>
-                <div class="contact_box contact_form">
+                <div class="contact_box contact_form" data-aos="fade-up">
                     <h2>HAVE ANY QUESTION?
                     </h2>
                     <form action="post">
@@ -114,7 +120,7 @@
         </center>
     </div>
 
-    <div class="map">
+    <div class="map" data-aos="flip-left">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.4566622841694!2d77.32761047416655!3d28.586074086191278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5dc52dee9db%3A0xd61ade68320b6847!2sNamrata%20Universal!5e0!3m2!1shi!2sin!4v1717397869100!5m2!1shi!2sin"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -195,6 +201,12 @@
             Jingleholidaybazar
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+        })
+    </script>
 
 </body>
 

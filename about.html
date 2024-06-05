@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="shortcut icon" href="assets/mainlogo.gif" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Jingle Holiday Bazar</title>
 </head>
 
@@ -14,7 +15,7 @@
     <div class="chat_box">
         <a href="https://web.whatsapp.com/send?l=en&phone=+91 8586065128&text=I want to order a website"
             target="_blank"><i class=" ri-chat-1-fill"></i></a>
-        <h4>Chat</h4>
+        <span class="tooltip">Chat</span>
     </div>
     <nav>
         <div class="nav__logo">
@@ -35,19 +36,24 @@
                 <div class="dropdown_nav">
                     <a href="/thailand.html">Thailand</a>
                     <a href="/belgium.html">belgium</a>
-                    <a href="">Canada</a>
-                    <a href="">dubai</a>
-                    <a href="">Singapure</a>
-                    <a href="">germany</a>
-                    <a href="">Maldives</a>
-                    <a href="">ice-land</a>
-                    <a href="">malaysia</a>
-                    <a href="">Switzerland</a>
-                    <a href="">nepal</a>
-                    <a href="">view more..</a>
+                    <a href="/canada.html">Canada</a>
+                    <a href="/dubai.html">dubai</a>
+                    <a href="/singapure.html">Singapure</a>
+                    <a href="/germany.html">germany</a>
+                    <a href="/maldives.html">Maldives</a>
+                    <a href="/ice_land.html">ice-land</a>
+                    <a href="/malaysia.html">malaysia</a>
+                    <a href="/switzerland.html">Switzerland</a>
+                    <a href="/napel.html">nepal</a>
+                    <a href="/view_more.html">view more..</a>
                 </div>
             </li>
-            <li class="link"><a href="#">Packages</a></li>
+            <li class="link nav_hover"><a href="#">Packages<i class="ri-arrow-drop-down-fill"></i></a>
+                <div class="dropdown_nav">
+                    <a href="/domestic_packages.html">Domestic </a>
+                    <a href="/view_more.html">International </a>
+                </div>
+            </li>
             <li class="link"><a href="#">Place</a></li>
             <li class="link"><a href="/contact.html">Contact Us</a></li>
         </ul>
@@ -58,7 +64,7 @@
 
     <div class="about_us" style="border: 1px solid transparent;">
         <div class="about_img about_image">
-            <h2>About Us</h2>
+            <h2 data-aos="fade-down">About Us</h2>
         </div>
 
         <div class="heading">
@@ -78,23 +84,23 @@
         </div>
 
         <div class="right_arrow">
-            <div class="about_box">
+            <div class="about_box" data-aos="fade-down">
                 <i class="ri-shield-check-fill"></i>
                 <h4>We offer daily tours</h4>
             </div>
-            <div class="about_box"> <i class="ri-shield-check-fill"></i>
+            <div class="about_box" data-aos="fade-down"> <i class="ri-shield-check-fill"></i>
                 <h4>Best price guarantee</h4>
             </div>
-            <div class="about_box"> <i class="ri-shield-check-fill"></i>
+            <div class="about_box" data-aos="fade-down"> <i class="ri-shield-check-fill"></i>
                 <h4>Never lose your deposit</h4>
             </div>
-            <div class="about_box"> <i class="ri-shield-check-fill"></i>
+            <div class="about_box" data-aos="fade-up"> <i class="ri-shield-check-fill"></i>
                 <h4>5 star accommodations</h4>
             </div>
-            <div class="about_box"> <i class="ri-shield-check-fill"></i>
+            <div class="about_box" data-aos="fade-up"> <i class="ri-shield-check-fill"></i>
                 <h4>Handpicked hotels</h4>
             </div>
-            <div class="about_box"> <i class="ri-shield-check-fill"></i>
+            <div class="about_box" data-aos="fade-up"> <i class="ri-shield-check-fill"></i>
                 <h4>Special gifts & offers for you</h4>
             </div>
         </div>
@@ -114,9 +120,8 @@
                 the world.
             </p>
 
-
             <div class="review_sec">
-                <div class="review_card_new">
+                <div class="review_card_new" data-aos="fade-down">
                     <img src="/assets/vishnu.jpeg" alt="">
                     <div class="review_contant">
                         <h4>Vishnu</h4>
@@ -127,7 +132,7 @@
                     </div>
                 </div>
 
-                <div class="review_card_new">
+                <div class="review_card_new" data-aos="fade-up">
                     <img src="/assets/Yogesh Rathore.jpeg" alt="">
                     <div class="review_contant">
                         <h4>Yogesh Rathore</h4>
@@ -136,7 +141,7 @@
                     </div>
                 </div>
 
-                <div class="review_card_new">
+                <div class="review_card_new" data-aos="fade-down">
                     <img src="/assets/Pravin Kumar Dubey.jpeg" alt="">
                     <div class="review_contant">
                         <h4>Pravin Kumar Dubey</h4>
@@ -145,7 +150,7 @@
                     </div>
                 </div>
 
-                <div class="review_card_new">
+                <div class="review_card_new" data-aos="fade-up">
                     <img src="/assets/Kuldeep Jaiswal.jpeg" alt="">
                     <div class="review_contant">
                         <h4>kuldeep Jaiswal</h4>
@@ -228,9 +233,12 @@
     </div>
 
 
-
-
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+        })
+    </script>
 </body>
 
 </html>

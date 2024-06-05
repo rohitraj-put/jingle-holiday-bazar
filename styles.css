@@ -19,13 +19,17 @@
   /* cursor: url(/assets/icons8-airport-48.png), auto; */
 }
 
+/* body::-webkit-scrollbar {
+  display: none;
+} */
+
 .tour_details {
   text-align: center;
 }
 
 .country_tour {
   width: 100%;
-  min-height: 80vh;
+  min-height: 40vh;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -69,6 +73,7 @@
   width: 100%;
   height: 40vh;
   overflow: hidden;
+  border-radius: 1rem;
 }
 
 .country_tour .country_card:hover .country_contant {
@@ -82,6 +87,7 @@
   object-fit: fill;
 
 }
+
 
 .view_more {
   display: flex;
@@ -102,26 +108,44 @@ img {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: var(--text-dark);
+  background-color: var(--nav-footer);
   position: fixed;
   z-index: 100;
   padding: 6px;
   cursor: pointer;
-  box-shadow: 0px 0px 2px 2px;
+  /* box-shadow: 0px 0px 2px 2px; */
+  animation: docs 1s infinite;
 
 }
 
-.chat_box h4 {
+.chat_box .tooltip {
   display: none;
   position: absolute;
-  top: -30px;
-  right: 10px;
-  color: var(--primary-color-dark);
+  top: -40px;
+  right: 2px;
+  color: var(--extra-light);
+  background-color: var(--primary-color);
+  padding: 5px 10px;
+  border-radius: 1rem;
+
 }
 
-.chat_box:hover h4 {
+.chat_box:hover .tooltip {
   display: block;
+}
 
+@keyframes docs {
+  0% {
+    transform: translateY(0%);
+  }
+
+  50% {
+    transform: translateY(-25%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
 }
 
 .chat_box i {
@@ -160,7 +184,7 @@ img {
 }
 
 .btn {
-  padding: 0.75rem 2rem;
+  padding: 0.50rem 1.5rem;
   outline: none;
   border: none;
   font-size: 1rem;
@@ -237,10 +261,10 @@ nav {
 .dropdown_nav {
   display: none;
   position: absolute;
-  top: 40px;
+  top: 41px;
   z-index: 100;
   padding: 19px 0px 10px 0px;
-
+  animation: downOut 300ms ease-in-out
 }
 
 .dropdown_nav a {
@@ -261,6 +285,23 @@ nav {
 
 .nav_hover:hover .dropdown_nav {
   display: block;
+
+}
+
+@keyframes downOut {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1.07);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 header {
@@ -288,6 +329,7 @@ header {
   text-align: end;
   transition: all 0.5s;
   cursor: pointer;
+  animation: docs 1s infinite;
 
 }
 
@@ -312,6 +354,7 @@ header {
 
 .section_enquery a i {
   font-size: 20px;
+
 }
 
 .section_enquery:hover {
@@ -925,7 +968,7 @@ img {
 
 .right_arrow {
   width: 90%;
-  height: 40vh;
+  min-height: 40vh;
   margin: 3rem auto;
   display: flex;
   justify-content: center;
@@ -960,6 +1003,18 @@ img {
 
 .about_image {
   background-image: url(/assets/about_banner.jpeg);
+}
+
+.view_more_img {
+  background-image: url(/assets/jingle-holiday-bazar-international-packages-blogs-tour-package-banner.webp);
+  height: 91vh;
+  background-position: bottom;
+}
+
+.domestic_packages_img {
+  background-image: url(assets/jingle-holiday-bazar-domestic-packages-blogs-tour-package-banner.webp);
+  height: 91vh;
+  background-position: bottom;
 }
 
 .about_img h2 {
@@ -1003,7 +1058,7 @@ img {
 
 .review_sec {
   width: 100%;
-  height: 70vh;
+  min-height: 70vh;
   margin: 4rem auto;
   display: flex;
   justify-content: center;
@@ -1011,7 +1066,7 @@ img {
 }
 
 .review_sec .review_card_new {
-  width: 260px;
+  width: 250px;
   height: 60vh;
   background-color: #0d213f;
   margin: 1%;
@@ -1055,7 +1110,7 @@ img {
 
 
 .state_gallery {
-  width: 96%;
+  width: 100%;
   min-height: 100vh;
   margin: 60px auto;
   display: flex;
@@ -1175,4 +1230,9 @@ img {
   .sec__container h2 {
     font-size: 3rem;
   }
+
+  .country_contant {
+    margin-top: 20px;
+  }
+
 }
