@@ -20,9 +20,11 @@
     <span class="tooltip">Chat</span>
   </div>
   <nav>
-    <div class="nav__logo">
-      <img src="/assets/mainlogo.gif" />
-    </div>
+    <a href="/index.html">
+      <div class="nav__logo" data-aos="fade-down">
+        <img src="/assets/mainlogo.gif" />
+      </div>
+    </a>
     <ul class="nav__links">
       <li class="link"><a href="#">Home</a></li>
       <li class="link"><a href="/about.html">About Us</a></li>
@@ -56,11 +58,21 @@
           <a href="/view_more.html">International </a>
         </div>
       </li>
-      <li class="link"><a href="#">Place</a></li>
+      <li class="link nav_hover"><a href="#">place<i class="ri-arrow-drop-down-fill"></i></a>
+        <div class="dropdown_nav">
+          <a href="/destination.html">Destinations </a>
+          <a href="hotel.html">Hotels </a>
+          <a href="/gallery.html">Gallery </a>
+        </div>
+      </li>
       <li class="link"><a href="/contact.html">Contact Us</a></li>
     </ul>
-    <button class="btn">Pay Now</button>
+    <a href="payment.html"> <button class="btn">Pay Now</button></a>
   </nav>
+
+
+
+
   <header>
     <div class="section__container header__container">
       <div class="header__image" data-aos="fade-right">
@@ -195,7 +207,7 @@
         </div>
       </div>
       <div class="view__all">
-        <button class="btn">View All</button>
+        <a href="/domestic_packages.html"><button class="btn">View All</button></a>
       </div>
     </div>
   </section>
@@ -223,7 +235,7 @@
             in mind
             iconic attractions, culture, food and ease of travel, these are the best places in the world to visit!
           </p>
-          <button class="btn">View All</button>
+          <a href="/view_more.html"><button class="btn">View All</button></a>
         </div>
       </div>
 
@@ -273,7 +285,7 @@
             rich
             heritage that's the result of centuries of different cultures and religions leaving their mark
           </p>
-          <button class="btn">View All</button>
+          <a href="/domestic_packages.html"> <button class="btn">View All</button></a>
         </div>
       </div>
 
@@ -286,28 +298,28 @@
   <section class="gallary">
     <div class="section__container gallary__container">
       <div class="image__gallary">
-        <div>
-          <div class="gallary__col" data-aos="zoom-in">
+        <div data-aos="zoom-in">
+          <div class="gallary__col">
             <img src="assets/gallery-1.jpg" alt="gallary" />
           </div>
           <h1>DARJEELING</h1>
         </div>
-        <div class="gallary__col">
-          <img src="assets/Hampi-1.jpg" alt="gallary" data-aos="fade-down" />
+        <div class="gallary__col" data-aos="fade-down">
+          <img src="assets/Hampi-1.jpg" alt="gallary" />
           <h1>VIJAYANAGARA</h1>
-          <img src="assets/gallery-3.jpg" alt="gallary" data-aos="fade-up" />
+          <img src="assets/gallery-3.jpg" alt="gallary" />
           <h1>SHIMLA</h1>
         </div>
       </div>
-      <div class="gallary__content">
-        <div data-aos="fade-up">
+      <div class="gallary__content" data-aos="fade-up">
+        <div>
           <h2 class="section__title" style="text-transform:uppercase; font-size: 3rem;">
             Our trip gallary that will inspire you.
           </h2>
           <p class="section__subtitle">
             At Jingle Holiday Bazar All Over India Destination Gallery.
           </p>
-          <button class="btn">View All</button>
+          <a href="/gallery.html"> <button class="btn">View All</button></a>
         </div>
       </div>
     </div>
@@ -385,50 +397,54 @@
           <i class="ri-map-pin-line"></i> 3C, A1 Sector 10, Noida
           Uttar Pradesh, India
         </p>
-        <p><i class="ri-mail-line"></i> jingleholidaybazar@gmail.com</p>
-        <p><i class="ri-phone-line"></i> +918506944777 , +918506922777</p>
+        <p><i class="ri-mail-line"></i> <a href="mailto:jingleholidaybazar@gmail.com">jingleholidaybazar@gmail.com</a>
+        </p>
+        <p><i class="ri-phone-line"></i> <a href="tel:+91 8506944777">+918506944777</a> , <a
+            href="tel:+91 8506922777">+918506922777</a>
+        </p>
 
 
       </div>
 
       <div class="footer__col">
-        <h4>Support</h4>
-        <p>FAQs</p>
-        <p>Terms & Conditions</p>
-        <p>Privacy Policy</p>
-        <p>Contact Us</p>
-        <p>Blog List</p>
-        <p>Destination</p>
+        <h4>Quick links</h4>
+        <p><a href="index.html">Home</a></p>
+        <p><a href="/about.html">About Us</a></p>
+        <p><a href="/view_more.html">Blog List</a></p>
+        <p><a href="/contact.html">Contact Us</a></p>
+        <p><a href="/hotel.html">Hotels</a></p>
+
+        <p><a href="/destination.html">Destination</a></p>
 
 
       </div>
       <div class="footer__col">
         <h4>Domastic Packages</h4>
-        <p>Uttrakhand</p>
-        <p>Mumbai</p>
-        <p>Ladakh</p>
-        <p>Meghalaya</p>
-        <p>Rajasthan</p>
-        <p>Aayodhya</p>
+        <p><a href="/domestic_packages.html">Uttrakhand</a></p>
+        <p><a href="/domestic_packages.html">Mumbai</a></p>
+        <p><a href="/domestic_packages.html">Ladakh</a></p>
+        <p><a href="/domestic_packages.html">Meghalaya</a></p>
+        <p><a href="/domestic_packages.html">Rajasthan</a></p>
+        <p><a href="/domestic_packages.html">Aayodhya</a></p>
       </div>
 
       <div class="footer__col">
         <h4>International Packages</h4>
-        <p>Singapure</p>
-        <p>Switzerland</p>
-        <p>South Arabia</p>
-        <p>Maldives</p>
-        <p>Canada</p>
-        <p>Thailand</p>
+        <p><a href="/singapure.html">Singapure</a></p>
+        <p><a href="/switzerland.html">Switzerland</a></p>
+        <p><a href="view_more.html">South Arabia</a></p>
+        <p><a href="/maldives.html">Maldives</a></p>
+        <p><a href="/canada.html">Canada</a></p>
+        <p><a href="/thailand.html">Thailand</a></p>
       </div>
 
       <div class="footer__col">
         <h4>Yatra</h4>
-        <p>Mata vaishno</p>
-        <p>Kedarnath</p>
-        <p>Badrinath</p>
-        <p>Char Dham Yatra</p>
-        <p>9 Devi Yatra</p>
+        <p><a href="/domestic_packages.html">Mata vaishno</a></p>
+        <p><a href="/domestic_packages.html">Kedarnath</a></p>
+        <p><a href="/domestic_packages.html">Badrinath</a></p>
+        <p><a href="/domestic_packages.html">Char Dham Yatra</a></p>
+        <p><a href="/domestic_packages.html">9 Devi Yatra</a></p>
 
         <div class="social_icon">
           <a href="#"><i class="ri-instagram-line"></i></a>

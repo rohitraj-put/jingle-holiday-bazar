@@ -27,13 +27,19 @@
   text-align: center;
 }
 
+
 .country_tour {
   width: 100%;
   min-height: 40vh;
+
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin: 2vh auto;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 
 .country_tour .country_card {
@@ -808,7 +814,11 @@ img {
   transition: 0.3s;
 }
 
-.footer__col p:hover {
+.footer__col p a {
+  color: var(--extra-light);
+}
+
+.footer__col p a:hover {
   color: var(--primary-color);
 }
 
@@ -1163,6 +1173,10 @@ img {
 
 
 
+
+
+
+
 @media (width < 1200px) {
   .header__image img:nth-child(1) {
     max-width: 300px;
@@ -1229,10 +1243,15 @@ img {
 
   .sec__container h2 {
     font-size: 3rem;
+    line-height: 5rem;
   }
+
 
   .country_contant {
     margin-top: 20px;
   }
 
+  .image__gallary h1 {
+    font-size: 20px;
+  }
 }

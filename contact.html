@@ -20,9 +20,11 @@
             <span class="tooltip">Chat</span>
         </div>
         <nav>
-            <div class="nav__logo">
-                <img src="/assets/mainlogo.gif" />
-            </div>
+            <a href="/index.html">
+                <div class="nav__logo">
+                    <img src="/assets/mainlogo.gif" />
+                </div>
+            </a>
             <ul class="nav__links">
                 <li class="link"><a href="/index.html">Home</a></li>
                 <li class="link"><a href="/about.html">About Us</a></li>
@@ -56,10 +58,16 @@
                         <a href="/view_more.html">International </a>
                     </div>
                 </li>
-                <li class="link"><a href="#">Place</a></li>
+                <li class="link nav_hover"><a href="#">place<i class="ri-arrow-drop-down-fill"></i></a>
+                    <div class="dropdown_nav">
+                        <a href="/destination.html">Destinations </a>
+                        <a href="hotel.html">Hotels </a>
+                        <a href="/gallery.html">Gallery </a>
+                    </div>
+                </li>
                 <li class="link"><a href="/contact.html">Contact Us</a></li>
             </ul>
-            <button class="btn">PAY NOW</button>
+            <a href="payment.html"> <button class="btn">Pay Now</button></a>
         </nav>
     </div>
 
@@ -107,11 +115,11 @@
                 <div class="contact_box contact_form" data-aos="fade-up">
                     <h2>HAVE ANY QUESTION?
                     </h2>
-                    <form action="post">
-                        <input type="text" placeholder="Enter name">
-                        <input type="email" placeholder="Enter Email">
-                        <input type="number" placeholder="Enter Number">
-                        <textarea name="" id="" placeholder="Write A Message" rows="10"></textarea>
+                    <form action="" method="get">
+                        <input type="text" placeholder="Enter Your Name" required>
+                        <input type="email" placeholder="Enter Your Email" required>
+                        <input type="number" placeholder="Enter Your Number" required>
+                        <textarea name="" id="" placeholder="Write A Message" rows="10" required></textarea>
 
                         <button class="btn">Send Message</button>
                     </form>
